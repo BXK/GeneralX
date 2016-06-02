@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17B97BCD-0FC2-47C6-9CCA-42704713D906}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GeneralX</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>F:\boost\64bit;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\boost\64bit\staticlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>F:\boost\64bit;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\boost\64bit\staticlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libboost_atomic-vc120-mt-sgd-1_61.lib;libboost_chrono-vc120-mt-sgd-1_61.lib;libboost_container-vc120-mt-sgd-1_61.lib;libboost_context-vc120-mt-sgd-1_61.lib;libboost_coroutine-vc120-mt-sgd-1_61.lib;libboost_date_time-vc120-mt-sgd-1_61.lib;libboost_exception-vc120-mt-sgd-1_61.lib;libboost_filesystem-vc120-mt-sgd-1_61.lib;libboost_graph-vc120-mt-sgd-1_61.lib;libboost_iostreams-vc120-mt-sgd-1_61.lib;libboost_locale-vc120-mt-sgd-1_61.lib;libboost_log-vc120-mt-sgd-1_61.lib;libboost_log_setup-vc120-mt-sgd-1_61.lib;libboost_math_c99-vc120-mt-sgd-1_61.lib;libboost_math_c99f-vc120-mt-sgd-1_61.lib;libboost_math_c99l-vc120-mt-sgd-1_61.lib;libboost_math_tr1-vc120-mt-sgd-1_61.lib;libboost_math_tr1f-vc120-mt-sgd-1_61.lib;libboost_math_tr1l-vc120-mt-sgd-1_61.lib;libboost_prg_exec_monitor-vc120-mt-sgd-1_61.lib;libboost_program_options-vc120-mt-sgd-1_61.lib;libboost_python-vc120-mt-sgd-1_61.lib;libboost_python3-vc120-mt-sgd-1_61.lib;libboost_random-vc120-mt-sgd-1_61.lib;libboost_regex-vc120-mt-sgd-1_61.lib;libboost_serialization-vc120-mt-sgd-1_61.lib;libboost_signals-vc120-mt-sgd-1_61.lib;libboost_system-vc120-mt-sgd-1_61.lib;libboost_test_exec_monitor-vc120-mt-sgd-1_61.lib;libboost_thread-vc120-mt-sgd-1_61.lib;libboost_timer-vc120-mt-sgd-1_61.lib;libboost_type_erasure-vc120-mt-sgd-1_61.lib;libboost_unit_test_framework-vc120-mt-sgd-1_61.lib;libboost_wave-vc120-mt-sgd-1_61.lib;libboost_wserialization-vc120-mt-sgd-1_61.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libboost_atomic-vc120-mt-s-1_61.lib;libboost_chrono-vc120-mt-s-1_61.lib;libboost_container-vc120-mt-s-1_61.lib;libboost_context-vc120-mt-s-1_61.lib;libboost_coroutine-vc120-mt-s-1_61.lib;libboost_date_time-vc120-mt-s-1_61.lib;libboost_exception-vc120-mt-s-1_61.lib;libboost_filesystem-vc120-mt-s-1_61.lib;libboost_graph-vc120-mt-s-1_61.lib;libboost_iostreams-vc120-mt-s-1_61.lib;libboost_locale-vc120-mt-s-1_61.lib;libboost_log-vc120-mt-s-1_61.lib;libboost_log_setup-vc120-mt-s-1_61.lib;libboost_math_c99-vc120-mt-s-1_61.lib;libboost_math_c99f-vc120-mt-s-1_61.lib;libboost_math_c99l-vc120-mt-s-1_61.lib;libboost_math_tr1-vc120-mt-s-1_61.lib;libboost_math_tr1f-vc120-mt-s-1_61.lib;libboost_math_tr1l-vc120-mt-s-1_61.lib;libboost_prg_exec_monitor-vc120-mt-s-1_61.lib;libboost_program_options-vc120-mt-s-1_61.lib;libboost_python-vc120-mt-s-1_61.lib;libboost_python3-vc120-mt-s-1_61.lib;libboost_random-vc120-mt-s-1_61.lib;libboost_regex-vc120-mt-s-1_61.lib;libboost_serialization-vc120-mt-s-1_61.lib;libboost_signals-vc120-mt-s-1_61.lib;libboost_system-vc120-mt-s-1_61.lib;libboost_test_exec_monitor-vc120-mt-s-1_61.lib;libboost_thread-vc120-mt-s-1_61.lib;libboost_timer-vc120-mt-s-1_61.lib;libboost_type_erasure-vc120-mt-s-1_61.lib;libboost_unit_test_framework-vc120-mt-s-1_61.lib;libboost_wave-vc120-mt-s-1_61.lib;libboost_wserialization-vc120-mt-s-1_61.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Betweenness.h" />
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="GeneralAnalysis.h" />
+    <ClInclude Include="GeneralPatchMatch.h" />
+    <ClInclude Include="Patch.h" />
+    <ClInclude Include="XUnion.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

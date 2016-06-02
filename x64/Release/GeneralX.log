@@ -1,0 +1,51 @@
+﻿Build started 5/27/2016 1:43:55 PM.
+     1>Project "G:\GeneralizePatchMatch\PatchMatch\GeneralX\GeneralX\GeneralX\GeneralX.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+     1>g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Element.h(179): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Element.h(178) : while compiling class template member function 'void Element<2>::LoadVolume(std::string,int)'
+                 main.cpp(36) : see reference to function template instantiation 'void Element<2>::LoadVolume(std::string,int)' being compiled
+                 main.cpp(34) : see reference to class template instantiation 'Element<2>' being compiled
+     1>g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Element.h(211): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Element.h(209) : while compiling class template member function 'void Element<2>::WriteVolume(std::string,std::string,int)'
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\GeneralPatchMatch.h(97) : see reference to function template instantiation 'void Element<2>::WriteVolume(std::string,std::string,int)' being compiled
+     1>g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\GeneralAnalysis.h(128): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\GeneralAnalysis.h(86) : while compiling class template member function 'void GeneralAnalysis<2>::OutPutUnion(std::string,std::string)'
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\GeneralAnalysis.h(82) : see reference to function template instantiation 'void GeneralAnalysis<2>::OutPutUnion(std::string,std::string)' being compiled
+                 main.cpp(72) : see reference to class template instantiation 'GeneralAnalysis<2>' being compiled
+     1>g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Betweenness.h(273): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Betweenness.h(215) : see reference to function template instantiation 'void CalcBetweenness<2>::simple_unweighted_betweenness_centrality<CalcBetweenness<2>::Graph,boost::adj_list_vertex_property_map<Graph,int,int &,Tag>,boost::iterator_property_map<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,boost::adj_list_vertex_property_map<Graph,int,int &,Tag>,double,double &>>(const Graph &,VertexIndexMap,CentralityMap)' being compiled
+                 with
+                 [
+                     Graph=boost::adjacency_list<boost::listS,boost::listS,boost::directedS,boost::property<boost::vertex_index_t,int,boost::no_property>,CalcBetweenness<N>::EdgeProperties,boost::no_property,boost::listS>
+         ,            Tag=boost::vertex_index_t
+         ,            VertexIndexMap=boost::adj_list_vertex_property_map<boost::adjacency_list<boost::listS,boost::listS,boost::directedS,boost::property<boost::vertex_index_t,int,boost::no_property>,CalcBetweenness<N>::EdgeProperties,boost::no_property,boost::listS>,int,int &,boost::vertex_index_t>
+         ,            CentralityMap=boost::iterator_property_map<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,boost::adj_list_vertex_property_map<boost::adjacency_list<boost::listS,boost::listS,boost::directedS,boost::property<boost::vertex_index_t,int,boost::no_property>,CalcBetweenness<N>::EdgeProperties,boost::no_property,boost::listS>,int,int &,boost::vertex_index_t>,double,double &>
+                 ]
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Betweenness.h(215) : see reference to function template instantiation 'void CalcBetweenness<2>::simple_unweighted_betweenness_centrality<CalcBetweenness<2>::Graph,boost::adj_list_vertex_property_map<Graph,int,int &,Tag>,boost::iterator_property_map<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,boost::adj_list_vertex_property_map<Graph,int,int &,Tag>,double,double &>>(const Graph &,VertexIndexMap,CentralityMap)' being compiled
+                 with
+                 [
+                     Graph=boost::adjacency_list<boost::listS,boost::listS,boost::directedS,boost::property<boost::vertex_index_t,int,boost::no_property>,CalcBetweenness<N>::EdgeProperties,boost::no_property,boost::listS>
+         ,            Tag=boost::vertex_index_t
+         ,            VertexIndexMap=boost::adj_list_vertex_property_map<boost::adjacency_list<boost::listS,boost::listS,boost::directedS,boost::property<boost::vertex_index_t,int,boost::no_property>,CalcBetweenness<N>::EdgeProperties,boost::no_property,boost::listS>,int,int &,boost::vertex_index_t>
+         ,            CentralityMap=boost::iterator_property_map<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,boost::adj_list_vertex_property_map<boost::adjacency_list<boost::listS,boost::listS,boost::directedS,boost::property<boost::vertex_index_t,int,boost::no_property>,CalcBetweenness<N>::EdgeProperties,boost::no_property,boost::listS>,int,int &,boost::vertex_index_t>,double,double &>
+                 ]
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Betweenness.h(130) : while compiling class template member function 'void CalcBetweenness<2>::random_unweighted_test(int)'
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\Betweenness.h(109) : see reference to function template instantiation 'void CalcBetweenness<2>::random_unweighted_test(int)' being compiled
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\GeneralAnalysis.h(286) : see reference to class template instantiation 'CalcBetweenness<2>' being compiled
+                 g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\GeneralAnalysis.h(285) : while compiling class template member function 'void GeneralAnalysis<2>::BoostBetweenness(std::string,std::string)'
+                 main.cpp(99) : see reference to function template instantiation 'void GeneralAnalysis<2>::BoostBetweenness(std::string,std::string)' being compiled
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\GeneralizePatchMatch\PatchMatch\GeneralX\GeneralX\x64\Release\GeneralX.exe" /INCREMENTAL:NO /NOLOGO "libboost_atomic-vc120-mt-s-1_61.lib" "libboost_chrono-vc120-mt-s-1_61.lib" "libboost_container-vc120-mt-s-1_61.lib" "libboost_context-vc120-mt-s-1_61.lib" "libboost_coroutine-vc120-mt-s-1_61.lib" "libboost_date_time-vc120-mt-s-1_61.lib" "libboost_exception-vc120-mt-s-1_61.lib" "libboost_filesystem-vc120-mt-s-1_61.lib" "libboost_graph-vc120-mt-s-1_61.lib" "libboost_iostreams-vc120-mt-s-1_61.lib" "libboost_locale-vc120-mt-s-1_61.lib" "libboost_log-vc120-mt-s-1_61.lib" "libboost_log_setup-vc120-mt-s-1_61.lib" "libboost_math_c99-vc120-mt-s-1_61.lib" "libboost_math_c99f-vc120-mt-s-1_61.lib" "libboost_math_c99l-vc120-mt-s-1_61.lib" "libboost_math_tr1-vc120-mt-s-1_61.lib" "libboost_math_tr1f-vc120-mt-s-1_61.lib" "libboost_math_tr1l-vc120-mt-s-1_61.lib" "libboost_prg_exec_monitor-vc120-mt-s-1_61.lib" "libboost_program_options-vc120-mt-s-1_61.lib" "libboost_python-vc120-mt-s-1_61.lib" "libboost_python3-vc120-mt-s-1_61.lib" "libboost_random-vc120-mt-s-1_61.lib" "libboost_regex-vc120-mt-s-1_61.lib" "libboost_serialization-vc120-mt-s-1_61.lib" "libboost_signals-vc120-mt-s-1_61.lib" "libboost_system-vc120-mt-s-1_61.lib" "libboost_test_exec_monitor-vc120-mt-s-1_61.lib" "libboost_thread-vc120-mt-s-1_61.lib" "libboost_timer-vc120-mt-s-1_61.lib" "libboost_type_erasure-vc120-mt-s-1_61.lib" "libboost_unit_test_framework-vc120-mt-s-1_61.lib" "libboost_wave-vc120-mt-s-1_61.lib" "libboost_wserialization-vc120-mt-s-1_61.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\GeneralizePatchMatch\PatchMatch\GeneralX\GeneralX\x64\Release\GeneralX.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\GeneralizePatchMatch\PatchMatch\GeneralX\GeneralX\x64\Release\GeneralX.lib" /MACHINE:X64 x64\Release\main.obj
+         Generating code
+     1>g:\generalizepatchmatch\patchmatch\generalx\generalx\generalx\element.h(338): warning C4715: 'IntToIndex<2>' : not all control paths return a value
+         Finished generating code
+         GeneralX.vcxproj -> G:\GeneralizePatchMatch\PatchMatch\GeneralX\GeneralX\x64\Release\GeneralX.exe
+     1>Done Building Project "G:\GeneralizePatchMatch\PatchMatch\GeneralX\GeneralX\GeneralX\GeneralX.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.46
